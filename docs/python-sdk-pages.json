@@ -61,6 +61,7 @@
         ]
       },
       "python-sdk/fastmcp-client-client",
+      "python-sdk/fastmcp-client-dependencies",
       "python-sdk/fastmcp-client-elicitation",
       "python-sdk/fastmcp-client-logging",
       "python-sdk/fastmcp-client-messages",
@@ -117,7 +118,13 @@
         "group": "sampling",
         "pages": [
           "python-sdk/fastmcp-experimental-sampling-__init__",
-          "python-sdk/fastmcp-experimental-sampling-handlers"
+          {
+            "group": "handlers",
+            "pages": [
+              "python-sdk/fastmcp-experimental-sampling-handlers-__init__",
+              "python-sdk/fastmcp-experimental-sampling-handlers-openai"
+            ]
+          }
         ]
       },
       {

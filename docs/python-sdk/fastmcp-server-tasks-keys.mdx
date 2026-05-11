@@ -26,7 +26,7 @@ in this module.
 
 ## Functions
 
-### `build_task_key` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/src/fastmcp/server/tasks/keys.py#L41" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
+### `build_task_key` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/server/tasks/keys.py#L41" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
 
 ```python
 build_task_key(task_scope: str | None, client_task_id: str, task_type: str, component_identifier: str) -> str
@@ -57,7 +57,7 @@ When ``task_scope`` is ``None`` the task is anonymous and lives in the
 'auth:client-a:task456:resource:file%3A%2F%2Fdata.txt'
 
 
-### `parse_task_key` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/src/fastmcp/server/tasks/keys.py#L80" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
+### `parse_task_key` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/server/tasks/keys.py#L80" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
 
 ```python
 parse_task_key(task_key: str) -> TaskKeyParts
@@ -84,7 +84,7 @@ Parse Docket task key to extract metadata.
 `{'task_scope': None, 'client_task_id': 'task456', 'task_type': 'tool', 'component_identifier': 'my_tool'}`
 
 
-### `get_client_task_id_from_key` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/src/fastmcp/server/tasks/keys.py#L137" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
+### `get_client_task_id_from_key` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/server/tasks/keys.py#L137" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
 
 ```python
 get_client_task_id_from_key(task_key: str) -> str
@@ -107,7 +107,7 @@ Extract just the client task ID from a task key.
 'task456'
 
 
-### `task_redis_prefix` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/src/fastmcp/server/tasks/keys.py#L156" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
+### `task_redis_prefix` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/server/tasks/keys.py#L156" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
 
 ```python
 task_redis_prefix(task_scope: str | None) -> str
@@ -123,7 +123,7 @@ anonymous tasks live under ``fastmcp:task:anon``.  Callers append
 
 ## Classes
 
-### `TaskKeyParts` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/src/fastmcp/server/tasks/keys.py#L23" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
+### `TaskKeyParts` <sup><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/server/tasks/keys.py#L23" target="_blank"><Icon icon="github" style="width: 14px; height: 14px;" /></a></sup>
 
 
 Decoded segments of a Docket task key.
